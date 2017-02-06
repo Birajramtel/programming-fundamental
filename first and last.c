@@ -9,19 +9,21 @@ Date : 11jan 2017
 #include<stdio.h>
 int main()
 {
-int n,i=1,last,a;
+int n,last;
 printf("Enter the four digit number");
 scanf("%d",&n);
-while(i<=3)
+last=n%10;
+printf("The last number is %d",last);
+while(n>=10)
 {
+
 n=n/10;
-i++;
+
 }
 printf("The first number is %d\n",n);
-printf("Enter the same number");
-scanf("%d",&a);
-last=a%10;
-printf("The last number is %d",last);
+//printf("Enter the same number");
+//scanf("%d",&a);
+
 
 
 
